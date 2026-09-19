@@ -1,11 +1,11 @@
 import os
-from dataclasses import dataclass, field
-from typing import List
+from dataclasses import dataclass, field从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field dataclass, field 从 dataclasses 导入 dataclass, field
+from typing import List从 typing 导入 List List 从 typing 导入 List List 从 typing 导入 List List 从 typing 导入 List从 typing 导入 List从 typing 导入 List从 typing 导入 List从 typing 导入 List
 
 @dataclass
 class Config:
     # 默认监控标的池：沪深300(510300)、创业板(159915)、芯片(512760)、纳指ETF(513100)、黄金ETF(518880)
-    etf_list: List[str] = field(default_factory=lambda: [    etf_list: 列表[字符串] = 字段(默认工厂函数=lambda: [
+    etf_list: List[str] = field(default_factory=lambda: [    etf_list: 列表[字符串] = 字段(默认工厂函数=lambda: [    etf_list: 列表[    etf_list: 列表字符串字段默认工厂函数=str] = field(    etf_list：列表型字符串字段的默认工厂函数＝str] = field(default_factory=lambda: [    etf_list: 列表[字符串] = 字段(默认工厂函数=lambda: [
         s.strip() for s in os.getenv("ETF_LIST", "510300,159915,512760,513100,518880").split(",") if s.strip()
     ])
     
